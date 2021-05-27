@@ -320,7 +320,7 @@ main {
 .vignettes_activites_petit_format article {
     height: 45%;
     border-radius: 20px;
-    box-shadow: 1px 1px 5px #DEEBFF;
+    box-shadow: 1px 1px 5px #F2F2F2;
 }
 
 .vignettes_activites_petit_format img {
@@ -330,21 +330,31 @@ main {
     border-radius: 20px 20px 0 0;
 }
 
-/*.vignettes_activites_petit_format {
+
+
+/*Footer*/
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: #F2F2F2;
+    margin-top: 100px;
+    padding: 50px 0 50px 50px;
+}
+
+footer h3 {
+    margin: 0 0 0 40px;
+}
+
+footer ul {
+    list-style: none;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 22%;
-    max-height: 100%;
-    border: 1px black solid;
+    margin-right: 350px;
 }
 
-.vignettes_activites_petit_format article {
-    height: 40%;
-}
-
-.vignettes_activites_petit_format img {
-    width: 100%;
-    
-    object-fit: cover;
+footer li {
+    margin: 0 0 10px 0;
 }

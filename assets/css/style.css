@@ -170,6 +170,7 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin: 0 60px 0 0;
 }
 
 #hebergements h4 {
@@ -270,4 +271,80 @@ main {
     flex-direction: column;
     justify-content: space-between;
     padding: 10px 0 10px 10px;
+}
+
+
+/* Section Activités */
+
+
+#activites {
+    margin: 100px 60px 0 0;
+}
+
+#vignettes_activites {
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#vignettes_activites h3 {
+    vertical-align: center;
+    padding-left: 20px;
+}
+
+.vignettes_activites_grand_format {
+    height: 100%;
+    width: 22%;
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px #DEEBFF;
+}
+
+.vignettes_activites_grand_format img {
+    height: 90%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+
+.vignettes_activites_petit_format {
+    width: 22%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.vignettes_activites_petit_format article {
+    height: 45%;
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px #DEEBFF;
+}
+
+.vignettes_activites_petit_format img {
+    height: 80%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+/*.vignettes_activites_petit_format {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 22%;
+    max-height: 100%;
+    border: 1px black solid;
+}
+
+.vignettes_activites_petit_format article {
+    height: 40%;
+}
+
+.vignettes_activites_petit_format img {
+    width: 100%;
+    
+    object-fit: cover;
 }

@@ -160,7 +160,7 @@ main {
 
  #barre_de_recherche i {
     font-size: 12px;
-    padding: 10px;
+    padding: 13px;
     border-radius: 10px 0 0 10px;
     background-color: #F2F2F2;
 }
@@ -171,11 +171,17 @@ main {
     border-top: 1px #F2F2F2 solid;
     border-bottom: 1px #F2F2F2 solid;
     padding: 10px 0 10px 10px;
+}
+
+#barre_de_recherche input::placeholder {
+    font-size: 16px;
+    line-height: 20px;
     font-weight: 700;
+    color: rgba(0, 0, 0, 1);
 }
 
  #barre_de_recherche button {
-    
+    border: none;
      border-radius: 0 10px 10px 0;
      padding: 10px;
      background-color: #0065FC;

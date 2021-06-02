@@ -5,6 +5,7 @@
 body {
     font-family: "Raleway", sans-serif;
     margin: 0;
+    max-width: 100%;
 }
 
 body a {
@@ -20,6 +21,7 @@ body a {
     align-items: flex-start;
     justify-content: flex-end;
     margin-bottom: 100px;
+   
     
 }
 
@@ -72,6 +74,58 @@ body a {
     color: #0065FC;
 }
 
+
+/* Adaptation de Header aux petits écrans */
+
+@media (max-width: 600px) {
+    .header {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        position: static;
+        display: flex;
+        justify-content: flex-start;
+        padding: 10px 0px 0 25px;
+        width: 50%;
+    }
+
+    .logo img {
+        padding: 0;
+    }
+    .menu {
+        width: 100vw;
+        display: flex;
+        justify-content: space-around;
+        order: 3;
+        padding-top: 0;
+    }
+
+    .menu ul {
+        width: 100%;
+        padding: 0;
+    }
+
+    .menu li {
+        width: 50%;
+        text-align: center;
+        border-bottom: 4px #F2F2F2 solid;
+        padding-bottom: 10px;
+    }
+    .selection_menu {
+        border-bottom: 4px #0065FC solid !important;
+        border-top: none;
+    }
+
+    .inscription {
+        width: 50%;
+        padding: 25px 15px 25px 0;
+        display: flex;
+        order: 2;
+        justify-content: flex-end;
+    }
+}
 
 
 

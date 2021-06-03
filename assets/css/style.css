@@ -3,7 +3,7 @@
 }
 
 body {
-    font-family: "Raleway", sans-serif;
+    font-family: 'Raleway', sans-serif;
     margin: 0;
     max-width: 100%;
 }
@@ -153,50 +153,66 @@ main {
     letter-spacing: -1px;
  }
 
- 
+ .recherche p {
+    font-size: 21px;
+    margin: 10px 0;
+    letter-spacing: -1px;
+ }
 
 
  /* Barre de recherche */
 
  #barre_de_recherche {
-     width: 300px;
+     width: 550px;
+     height: auto;
      margin: 30px 0 0 0;
      border-radius: 10px;
-     display: flex;
-     flex-direction: row;
-     align-items: center;
+    
  }
 
+ #barre_de_recherche form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: auto;
+ }
  #barre_de_recherche i {
-    font-size: 12px;
-    padding: 13px;
-    border-radius: 10px 0 0 10px;
+    font-size: 21px;
+    padding: 19px 22px;
+    border-radius: 15px 0 0 10px;
     background-color: #F2F2F2;
 }
 
 
 #barre_de_recherche input {
+    width: 63%;
     border: none;
     border-top: 1px #F2F2F2 solid;
     border-bottom: 1px #F2F2F2 solid;
-    padding: 10px 0 10px 10px;
+    padding: 21px 0 21px 15px;
+    font-family: 'Raleway';
 }
 
 #barre_de_recherche input::placeholder {
-    font-size: 16px;
+    font-size: 22px;
     line-height: 20px;
     font-weight: 700;
     color: rgba(0, 0, 0, 1);
 }
 
  #barre_de_recherche button {
+     width: 37%;
     border: none;
      border-radius: 0 10px 10px 0;
-     padding: 10px;
+     padding: 17px 10px;
      background-color: #0065FC;
+     font-size: 22px;
      color: white;
      font-weight: 600;
+     font-family: 'Raleway';
  }
+
 
  
  /* Filtres*/

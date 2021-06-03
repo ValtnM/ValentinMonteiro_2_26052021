@@ -34,6 +34,7 @@ body a {
 
 .header a {
     text-decoration: none;
+    font-size: 20px;
 }
 
 .menu ul {
@@ -70,6 +71,7 @@ body a {
 
 
 .inscription a {
+    
     font-weight: 800;
     color: #0065FC;
 }
@@ -81,6 +83,7 @@ body a {
     .header {
         display: flex;
         flex-wrap: wrap;
+        margin-bottom: 35px;
     }
 
     .logo {
@@ -132,16 +135,25 @@ body a {
 /*main*/
 
 main {
-    margin-left: 60px;
+    margin: 0 60px;
 }
 
+@media (max-width: 1000px) {
+    main {
+     margin: 0 30px;  
+    }
+}
 
  /* Section Recherche*/
 
 
  h1 {
     margin-bottom: 0;
+    font-size: 30px;
+    letter-spacing: -1px;
  }
+
+ 
 
 
  /* Barre de recherche */
@@ -149,11 +161,8 @@ main {
  #barre_de_recherche {
      width: 300px;
      margin: 30px 0 0 0;
-     
-     
      border-radius: 10px;
      display: flex;
-     justify-content: space-between;
      flex-direction: row;
      align-items: center;
  }
@@ -260,7 +269,7 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin: 0 60px 0 0;
+    
 }
 
 #hebergements h4 {
@@ -368,7 +377,7 @@ main {
 
 
 #activites {
-    margin: 100px 60px 0 0;
+    margin: 100px 0 0 0;
 }
 
 #vignettes_activites {

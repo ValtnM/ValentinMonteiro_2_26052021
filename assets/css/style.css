@@ -21,8 +21,6 @@ body a {
     align-items: flex-start;
     justify-content: flex-end;
     margin-bottom: 100px;
-   
-    
 }
 
 .logo {
@@ -46,13 +44,11 @@ body a {
 .menu li {
     list-style: none;
     padding: 33px 25px 0 25px;
-    
 }
 
 
 .menu a {
     font-weight: 600;
-    
 }    
 
 .selection_menu {
@@ -71,7 +67,6 @@ body a {
 
 
 .inscription a {
-    
     font-weight: 800;
     color: #0065FC;
 }
@@ -97,6 +92,7 @@ body a {
     .logo img {
         padding: 0;
     }
+    
     .menu {
         width: 100vw;
         display: flex;
@@ -116,6 +112,7 @@ body a {
         border-bottom: 4px #F2F2F2 solid;
         padding-bottom: 10px;
     }
+    
     .selection_menu {
         border-bottom: 4px #0065FC solid !important;
         border-top: none;
@@ -128,6 +125,8 @@ body a {
         order: 2;
         justify-content: flex-end;
     }
+
+   
 }
 
 
@@ -138,12 +137,12 @@ main {
     margin: 0 60px;
 }
 
-@media (max-width: 1000px) {
+/*@media (max-width: 1000px) {
     main {
      margin: 0 30px;  
     }
 }
-
+*/
  /* Section Recherche*/
 
 
@@ -163,6 +162,7 @@ main {
  /* Barre de recherche */
 
  #barre_de_recherche {
+     max-width: 100%;
      width: 550px;
      height: auto;
      margin: 30px 0 0 0;
@@ -177,11 +177,20 @@ main {
     width: 100%;
     height: auto;
  }
- #barre_de_recherche i {
-    font-size: 21px;
-    padding: 19px 22px;
-    border-radius: 15px 0 0 10px;
+
+ .fa-map-marker-alt {
+    border-radius: 15px 0 0 15px;
     background-color: #F2F2F2;
+    padding: 19px 22px;  
+    
+ }
+
+ .fa-map-marker-alt, .bouton_loupe i{
+    font-size: 21px;   
+}
+
+.bouton_loupe {
+    visibility: collapse;
 }
 
 
@@ -201,10 +210,10 @@ main {
     color: rgba(0, 0, 0, 1);
 }
 
- #barre_de_recherche button {
+ .bouton_rechercher {
      width: 37%;
     border: none;
-     border-radius: 0 10px 10px 0;
+     border-radius: 0 15px 15px 0;
      padding: 17px 10px;
      background-color: #0065FC;
      font-size: 22px;
@@ -213,6 +222,37 @@ main {
      font-family: 'Raleway';
  }
 
+ 
+
+
+ @media (max-width: 600px) {
+    .bouton_rechercher {
+        visibility: collapse;
+        display: flex;
+        order: 2;
+         /*display: none;*/
+     }
+     
+     
+     .bouton_loupe {
+         /*display: block;*/
+         visibility: visible;
+         display:flex;
+         order: 1;
+         color: white;
+         background-color: #0065FC;
+         border: none;
+        border-radius: 15px;
+    
+     }
+
+     .bouton_loupe i {
+        padding: 19px 15px;  
+     }
+     .bouton_rechercher i {
+         
+     }
+}
 
  
  /* Filtres*/

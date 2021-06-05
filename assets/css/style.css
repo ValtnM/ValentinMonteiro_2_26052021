@@ -410,12 +410,14 @@ h2 {
 /*Footer*/
 
 footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+    display: flex;    
     background-color: #F2F2F2;
     margin-top: 100px;
-    padding: 50px 0 50px 50px;
+    padding: 50px 0 50px 0px;
+}
+
+.menu_footer {
+    width: 33%;
 }
 
 footer h3 {
@@ -427,7 +429,7 @@ footer ul {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-right: 350px;
+    
 }
 
 footer li {
@@ -534,14 +536,28 @@ footer li {
     .vignettes_activites_grand_format img, .vignettes_activites_petit_format img {
         height: 75%;
     }
+
+
+    /* Footer */
+
+
+}
+
+@media (max-width:900px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu_footer {
+        margin-bottom: 30px;
+    }
+    
 }
 
 
 
-
-
 @media (max-width: 700px) {
-
     
 
 

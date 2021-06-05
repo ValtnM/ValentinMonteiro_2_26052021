@@ -229,10 +229,14 @@ h1 {
 
 .hebergements {
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
-    
+    margin-top: 50px;
 }
+
+.hebergements h2 {
+    font-size: 30px;
+}
+
 
 .hebergements h4 {
     font-weight: 800;
@@ -246,6 +250,7 @@ h1 {
     margin-bottom: 20px;
     padding: 10px;
     border-radius: 20px;
+    box-shadow: 0 3px 5px 1px lightgrey;
 }
 
 .hebergements article p {
@@ -263,16 +268,17 @@ h1 {
 }
 
 
+
 .resultats_principaux .liste_hotels {
     display: flex;
-    justify-content: space-between;
-    flex-direction: row;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
 
 .resultats_principaux article {
     width: 30%;
+    min-width: 250px;
    
 }
 
@@ -312,26 +318,34 @@ h1 {
     font-size: 25px;
 }
 
+.liste_hotels_populaires {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .resultats_populaires article{
     display: flex;
     flex-direction: row;
-    
+    min-width: 350px;
     height: 30%;
+    padding: 0;
 }
 
 .resultats_populaires article img {
     width: 40%;
     object-fit: cover;
     height: 180px;
-    border-radius: 20px 0 0 20px;
-    margin-right: 10px;
+    border-radius: 30px 0 0 30px;
+    margin-right: 0px;
+    padding: 0;
 }
 
 .details_hebergements_populaires{
+    width: 60%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 10px 0 10px 10px;
+    padding: 10px 0 10px 20px;
 }
 
 
@@ -426,6 +440,18 @@ footer li {
 
 
 @media (max-width:1250px) {
+
+    main {
+        margin: 0;
+    }
+
+
+/* Section Recherche */
+    
+    .recherche {
+        padding: 0 20px;
+    }
+
     .filtres {
         display: flex;
         flex-direction: column;
@@ -442,15 +468,49 @@ footer li {
     .filtres li {
         margin: 0 20px 20px 0 ;
     }
+
+
+/* Section Hébergement */
+    .hebergements {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .resultats_populaires {
+        width: 100%;
+        margin: 0 0 50px 0;
+        border-radius: 0;
+    }
+
+    .resultats_populaires article{
+        width: 100%;
+    }
+
+    .liste_hotels_populaires article img {
+        padding: 10px;
+    }
+
+    .resultats_principaux {
+        display: flex;
+        flex-direction: column;
+        order: 2;
+        background-color: white;
+    }
+
+    .liste_hotels {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .liste_hotels article {
+        width: 100%;
+    }
 }
 
 
 @media (max-width: 700px) {
 
-    main {
-        margin: 0 20px;
-    }
-
+    
 
 
 /* Header */

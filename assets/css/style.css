@@ -86,6 +86,10 @@ h1 {
     letter-spacing: -1px;
  }
 
+h2 {
+    font-size: 30px;
+}
+
 .recherche p {
     font-size: 21px;
     margin: 10px 0;
@@ -233,10 +237,6 @@ h1 {
     margin-top: 50px;
 }
 
-.hebergements h2 {
-    font-size: 30px;
-}
-
 
 .hebergements h4 {
     font-weight: 800;
@@ -359,14 +359,14 @@ h1 {
 .vignettes_activites {
     height: 600px;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
 }
 
 .vignettes_activites h3 {
-    vertical-align: center;
     padding-left: 20px;
 }
+
+
 
 .vignettes_activites_grand_format {
     height: 100%;
@@ -505,7 +505,39 @@ footer li {
     .liste_hotels article {
         width: 100%;
     }
+
+    
+    /* Section Activités */
+
+    .activites {
+        padding: 0 40px;
+    }
+
+    .vignettes_activites {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .vignettes_activites_petit_format {
+        width: 100%;
+    }
+    
+
+    .vignettes_activites_grand_format, .vignettes_activites_petit_format article {
+        width: 100%;
+        height: 300px;
+        margin: 25px 0;
+    }
+
+    .vignettes_activites_grand_format img, .vignettes_activites_petit_format img {
+        height: 75%;
+    }
 }
+
+
+
 
 
 @media (max-width: 700px) {

@@ -91,34 +91,31 @@ h1 {
     letter-spacing: -1px;
  }
 
-h2 {
-    font-size: 30px;
-}
-
 .recherche p {
     font-size: 21px;
     margin: 10px 0;
     letter-spacing: -1px;
  }
 
+h2 {
+    font-size: 30px;
+}
+
+
+
 
  /* Barre de recherche */
 
  .barre_de_recherche {
-     max-width: 100%;
      width: 550px;
-     height: auto;
-     margin: 30px 0 0 0;
+     margin-top: 30px;
      border-radius: 10px;
     
  }
 
  .barre_de_recherche form {
     display: flex;
-    flex-direction: row;
     align-items: center;
-    width: 100%;
-    height: auto;
  }
 
  .fa-map-marker-alt {
@@ -148,10 +145,10 @@ h2 {
 }
 
 .barre_de_recherche input::placeholder {
-    font-size: 22px;
+    font-size: 20px;
     line-height: 20px;
     font-weight: 700;
-    color: rgba(0, 0, 0, 1);
+    color: black;
 }
 
  .bouton_rechercher {
@@ -198,12 +195,10 @@ h2 {
 
 .filtres li {
     display: flex;
-    flex-wrap: nowrap;
     align-items: center;
     margin: 30px 20px 30px 0;
     padding: 0 20px 0 0;
     border: 3px #F2F2F2 solid;
-    
     border-radius: 30px;
 }
 
@@ -213,7 +208,6 @@ h2 {
 
 .filtres a {
     display: flex;
-    flex-direction: row;
     align-items: center;
 }
 
@@ -237,7 +231,6 @@ h2 {
 
 .message_information {
     display: flex;
-    flex-direction: row;
     align-items: center;
 }
 
@@ -260,14 +253,6 @@ h2 {
     margin-top: 50px;
 }
 
-
-.hebergements h4 {
-    font-weight: 800;
-    font-size: 20px;
-    margin: 10px 0 5px 0;
-    
-}
-
 .hebergements article {
     background-color: white;
     margin-bottom: 20px;
@@ -279,6 +264,13 @@ h2 {
 
 .hebergements article:hover {
     background-color: #DEEBFF;
+}
+
+.hebergements h4 {
+    font-weight: 800;
+    font-size: 20px;
+    margin: 10px 0 5px 0;
+    
 }
 
 .hebergements article p {
@@ -299,7 +291,7 @@ h2 {
 .resultats_principaux {
     background-color: #F2F2F2;
     border-radius: 20px;
-    padding: 20px 40px 20px 40px;
+    padding: 20px 40px;
 }
 
 
@@ -329,7 +321,13 @@ h2 {
 
 .afficher_plus{
     font-weight: 800;
-    font-size: 20px;   
+    font-size: 20px;
+    padding: 40px 30px;
+    display: block;
+}
+
+.afficher_plus:hover {
+    color: #0065FC;
 }
 
 
@@ -346,7 +344,6 @@ h2 {
 
 .titre_resultats_populaires{
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 10px;
@@ -363,9 +360,6 @@ h2 {
 
 .resultats_populaires article a{
     display: flex;
-    flex-direction: row;
-    min-width: 350px;
-    height: 30%;
 }
 
 .resultats_populaires article img {
@@ -373,8 +367,6 @@ h2 {
     object-fit: cover;
     height: 180px;
     border-radius: 20px 0 0 20px;
-    margin-right: 0px;
-    padding: 0;
 }
 
 .details_hebergements_populaires{
@@ -390,7 +382,7 @@ h2 {
 
 
 .activites {
-    margin: 100px 0 0 0;
+    margin-top: 100px;
 }
 
 .vignettes_activites {
@@ -401,7 +393,6 @@ h2 {
 
 .vignettes_activites article {
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
 }
 
@@ -450,7 +441,7 @@ h2 {
 }
 
 .vignettes_activites_petit_format a {
-    height: 100%;
+    width: 100%;
 }
 
 .vignettes_activites_petit_format img {
@@ -476,19 +467,15 @@ footer {
 }
 
 footer h3 {
-    margin: 0 0 0 40px;
+    margin-left: 40px;
 }
 
 footer ul {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    
+    list-style: none;   
 }
 
 footer li {
-    margin: 0 0 10px 0;
+    margin-bottom: 10px;
 }
 
 footer li:hover {
@@ -517,7 +504,6 @@ footer li:hover {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        justify-content: flex-start;
         margin-top: 30px;
     }
 
@@ -533,12 +519,10 @@ footer li:hover {
 
 /* Section Hébergement */
     .hebergements {
-        display: flex;
         flex-direction: column;
     }
 
     .resultats_populaires {
-        width: 100%;
         margin: 0 0 50px 0;
         border-radius: 0;
     }
@@ -548,23 +532,18 @@ footer li:hover {
         padding: 5px;
     }
 
-  
-
     .resultats_principaux {
-        display: flex;
-        flex-direction: column;
         order: 2;
         background-color: white;
-    }
-
-    .liste_hotels {
-        flex-direction: column;
     }
 
     .liste_hotels article {
         width: 100%;
     }
 
+    .afficher_plus {
+        padding: 20px 10px;
+    }
     
     /* Section Activités */
 
@@ -603,7 +582,6 @@ footer li:hover {
     /* Footer */
 
     footer {
-        display: flex;
         flex-direction: column;
     }
 
@@ -623,15 +601,12 @@ footer li:hover {
 /* Header */
 
     .header {
-        display: flex;
         flex-wrap: wrap;
         margin-bottom: 35px;
     }
 
     .logo {
         position: static;
-        display: flex;
-        justify-content: flex-start;
         padding: 10px 0px 0 25px;
         width: 50%;
     }
@@ -642,14 +617,10 @@ footer li:hover {
     
     .menu {
         width: 100%;
-        display: flex;
-        justify-content: space-around;
         order: 3;
-        padding-top: 0;
     }
 
     .menu ul {
-        width: 100%;
         padding: 0;
     }
 
@@ -677,19 +648,12 @@ footer li:hover {
 
     .bouton_rechercher {
         visibility: collapse;
-        display: flex;
-        order: 2;
         position: absolute;
-        left: 0;
-         /*display: none;*/
      }
      
      
      .bouton_loupe {
-         /*display: block;*/
          visibility: visible;
-         display:flex;
-         order: 1;
          color: white;
          background-color: #0065FC;
          border: none;

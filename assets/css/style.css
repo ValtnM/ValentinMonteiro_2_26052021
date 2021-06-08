@@ -277,8 +277,13 @@ h2 {
     margin-top: 0;
 }
 
+.note_hotel {
+    display: flex;
+}
+
 .fa-star {
     color: #F2F2F2;
+    margin-right: 1px;
 }
 
 .etoile_bleu {
@@ -316,7 +321,7 @@ h2 {
 }
 
 .details_hebergements_principaux {
-    padding-bottom: 10px;
+    padding: 0 0 10px 10px;
 }
 
 .afficher_plus{
@@ -478,7 +483,8 @@ footer li {
     margin-bottom: 10px;
 }
 
-footer li:hover {
+footer a:hover {
+    color: #0065FC;
     font-weight: 600;
 }
 

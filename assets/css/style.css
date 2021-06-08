@@ -248,7 +248,7 @@ h2 {
 .hebergements article {
     background-color: white;
     margin-bottom: 20px;
-    padding: 10px;
+    padding: 7px;
     border-radius: 20px;
     box-shadow: 0 3px 5px 1px lightgrey;
 }
@@ -257,6 +257,13 @@ h2 {
     margin-top: 0;
 }
 
+.fa-star {
+    color: #F2F2F2;
+}
+
+.etoile_bleu {
+    color: #0065FC;
+}
 
 /* Résultats principaux */
 
@@ -278,8 +285,7 @@ h2 {
 
 .resultats_principaux article {
     width: 30%;
-    min-width: 250px;
-   
+    min-width: 250px;   
 }
 
 .resultats_principaux img {
@@ -287,6 +293,10 @@ h2 {
     height: 200px;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
+}
+
+.details_hebergements_principaux {
+    padding-bottom: 10px;
 }
 
 .afficher_plus{
@@ -328,14 +338,13 @@ h2 {
     flex-direction: row;
     min-width: 350px;
     height: 30%;
-    padding: 0;
 }
 
 .resultats_populaires article img {
     width: 40%;
     object-fit: cover;
     height: 180px;
-    border-radius: 30px 0 0 30px;
+    border-radius: 20px 0 0 20px;
     margin-right: 0px;
     padding: 0;
 }
@@ -345,7 +354,7 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 10px 0 10px 20px;
+    padding: 10px 0 20px 20px;
 }
 
 
@@ -359,6 +368,12 @@ h2 {
 .vignettes_activites {
     height: 600px;
     display: flex;
+    justify-content: space-between;
+}
+
+.vignettes_activites article {
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }
 
@@ -486,11 +501,10 @@ footer li {
 
     .resultats_populaires article{
         width: 100%;
+        padding: 5px;
     }
 
-    .liste_hotels_populaires article img {
-        padding: 10px;
-    }
+  
 
     .resultats_principaux {
         display: flex;
@@ -500,7 +514,6 @@ footer li {
     }
 
     .liste_hotels {
-        display: flex;
         flex-direction: column;
     }
 
@@ -517,9 +530,12 @@ footer li {
 
     .vignettes_activites {
         height: auto;
-        display: flex;
         flex-direction: column;
         justify-content: space-between;
+    }
+
+    .vignettes_activites article {
+        justify-content: space-around;
     }
 
     .vignettes_activites_petit_format {
@@ -536,14 +552,12 @@ footer li {
     .vignettes_activites_grand_format img, .vignettes_activites_petit_format img {
         height: 75%;
     }
-
-
-    /* Footer */
-
-
 }
 
 @media (max-width:900px) {
+    
+    /* Footer */
+
     footer {
         display: flex;
         flex-direction: column;
@@ -551,6 +565,7 @@ footer li {
 
     .menu_footer {
         margin-bottom: 30px;
+        width: 100%;
     }
     
 }

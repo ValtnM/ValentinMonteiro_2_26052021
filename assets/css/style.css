@@ -347,6 +347,10 @@ h2 {
     min-width: 30%;
 }
 
+.resultats_populaires article {
+    width: 100%;
+}
+
 .titre_resultats_populaires{
     display: flex;
     align-items: center;
@@ -601,6 +605,10 @@ footer a:hover {
     }
     
     .vignettes_activites_petit_format {
+        width: 100%;
+    }
+
+    .vignettes_activites_grand_format a {
         width: 100%;
     }
     

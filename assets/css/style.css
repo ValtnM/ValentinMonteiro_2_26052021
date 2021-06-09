@@ -398,17 +398,24 @@ h2 {
 
 .vignettes_activites article {
     display: flex;
-    justify-content: space-between;
 }
 
 .vignettes_activites article:hover {
     background-color: #F2F2F2;
 }
 
-.vignettes_activites h3 {
-    padding-left: 20px;
+.vignettes_activites a {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
+.vignettes_activites h3 {
+    height: 60px;
+    margin:0;
+    padding: 18px 0 18px 20px;
+    font-size: 20px;
+}
 
 
 .vignettes_activites_grand_format {
@@ -440,22 +447,38 @@ h2 {
 
 
 .vignettes_activites_petit_format article {
-    height: 45%;
     border-radius: 20px;
     box-shadow: 1px 1px 5px #F2F2F2;
 }
 
 .vignettes_activites_petit_format a {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .vignettes_activites_petit_format img {
-    height: 80%;
     width: 100%;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
 }
 
+.moyenne_vignette_activite {
+    height: 300px;
+}
+
+.moyenne_vignette_activite img {
+    height: 240px;
+}
+
+.petite_vignette_activite {
+    height: 240px;
+}
+
+.petite_vignette_activite img{
+    height: 180px;
+}
 
 
 /*Footer*/
@@ -492,6 +515,12 @@ footer a:hover {
 
 /* Adaptation de Header aux petits écrans */
 
+
+@media (max-width: 1500px) {
+    .vignettes_activites h3 {
+        font-size: 16px;
+    }
+}
 
 @media (max-width:1250px) {
 
@@ -567,6 +596,10 @@ footer a:hover {
         justify-content: space-around;
     }
 
+    .vignettes_activites h3 {
+        font-size: 20px;
+    }
+    
     .vignettes_activites_petit_format {
         width: 100%;
     }

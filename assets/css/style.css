@@ -5,7 +5,7 @@
 body {
     font-family: 'Raleway', sans-serif;
     margin: 0;
-    min-width: 440px;
+    min-width: 320px;
     max-width: 3000px;
 }
 
@@ -660,6 +660,7 @@ footer a:hover {
 
     .logo img {
         padding: 0;
+        width: 60%;
     }
     
     .menu {
@@ -711,5 +712,65 @@ footer a:hover {
      .bouton_loupe i {
         padding: 19px 15px;
      }
-     
+    
+     .afficher_plus {
+         padding: 0 10px;
+     }
+}
+
+
+
+
+@media (max-width: 500px) {
+
+    .header a {
+        font-size: 15px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    .barre_de_recherche {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 21px;
+    }
+
+    .filtres h2 {
+        font-size: 20px
+    }
+
+    .filtres h3 {
+        font-size: 18px;
+    }
+
+    .recherche p {
+        font-size: 16px;
+    }
+
+    .resultats_populaires, .resultats_principaux, .activites {
+        padding: 20px 10px;
+    }
+
+    .hebergements h4 {
+        font-size: 17px;
+    }
+
+    .hebergements p {
+        font-size: 15px;
+    }
+
+    .afficher_plus {
+        font-size: 17px;
+    }
+
+    .activites, footer {
+        margin-top: 20px;
+    }
+    .vignettes_activites h3 {
+        font-size: 15px;
+    }
 }

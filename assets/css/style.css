@@ -425,7 +425,7 @@ h2 {
     height: 60px;
     margin:0;
     padding: 18px 0 18px 20px;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 
@@ -525,13 +525,6 @@ footer a:hover {
 
 
 /* Adaptation de Header aux petits écrans */
-
-
-@media (max-width: 1500px) {
-    .vignettes_activites h3 {
-        font-size: 16px;
-    }
-}
 
 @media (max-width:1250px) {
 

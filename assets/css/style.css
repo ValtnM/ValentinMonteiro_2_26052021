@@ -700,11 +700,12 @@ footer a:hover {
         border-bottom: 4px #F2F2F2 solid;
         padding-bottom: 10px;
     }
-    
-    .selection_menu {
+
+    .menu li:hover {
         border-bottom: 4px #0065FC solid !important;
         border-top: none;
     }
+    
 
     .inscription {
         width: 50%;
